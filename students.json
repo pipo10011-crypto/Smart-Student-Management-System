@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "name": "ahmed",
+        "age": 20,
+        "department": "3",
+        "level": 3,
+        "gpa": 2.0
+    }
+]
