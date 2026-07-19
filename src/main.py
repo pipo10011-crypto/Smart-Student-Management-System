@@ -2,28 +2,19 @@ from database import Database
 
 db = Database()
 
-students = db.load_students()
+while True:
+    print("\n====== Smart Student Management ======")
+    print("1. Add Student")
+    print("2. View Students")
+    print("3. Search Student")
+    print("4. Update Student")
+    print("5. Delete Student")
+    print("6. Exit")
 
-print("=" * 40)
-print(" Smart Student Management System ")
-print("=" * 40)
+    choice = input("Choose: ")
 
-name = input("Student Name: ")
-age = int(input("Student Age: "))
-department = input("Department: ")
-level = int(input("Level: "))
-gpa = float(input("GPA: "))
+    if choice == "6":
+        print("Goodbye!")
+        break
 
-student = {
-    "name": name,
-    "age": age,
-    "department": department,
-    "level": level,
-    "gpa": gpa
-}
-
-students.append(student)
-
-db.save_students(students)
-
-print("\nStudent saved successfully!")
+    print("This feature will be implemented soon.")
